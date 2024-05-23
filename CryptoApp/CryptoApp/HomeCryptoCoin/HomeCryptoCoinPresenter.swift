@@ -24,9 +24,9 @@ class HomeCryptoCoinPresenter: HomeCryptoCoinPresentable {
     private let homeCryptoCoinInteractor : HomeCryptoCoinInteractor
     private var models: [HomeCryptoCoinEntity] = []
     private let mapper: MapperHomeCryptoCoin
-    private let router: HomeCryptoCoinRouter
+    private let router: HomeCryptoCoinRouting
     
-    init(homeCryptoCoinInteractor: HomeCryptoCoinInteractor, mapper: MapperHomeCryptoCoin = MapperHomeCryptoCoin(), router: HomeCryptoCoinRouter) {
+    init(homeCryptoCoinInteractor: HomeCryptoCoinInteractor, mapper: MapperHomeCryptoCoin = MapperHomeCryptoCoin(), router: HomeCryptoCoinRouting) {
         self.homeCryptoCoinInteractor = homeCryptoCoinInteractor
         self.mapper = mapper
         self.router = router

@@ -36,13 +36,14 @@
 		CC3900BC2BFBFE1600E5CDC0 /* HomeCryptoCoinResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3900BB2BFBFE1600E5CDC0 /* HomeCryptoCoinResponseEntity.swift */; };
 		CC3900BF2BFC233E00E5CDC0 /* HomeCryptoCoinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3900BD2BFC233E00E5CDC0 /* HomeCryptoCoinTableViewCell.swift */; };
 		CC3900C02BFC233E00E5CDC0 /* HomeCryptoCoinTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC3900BE2BFC233E00E5CDC0 /* HomeCryptoCoinTableViewCell.xib */; };
-		CC3900C32BFC2B8D00E5CDC0 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CC3900C22BFC2B8D00E5CDC0 /* Kingfisher */; };
 		CC3900C52BFC46A700E5CDC0 /* DetailCryptoCoinHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3900C42BFC46A700E5CDC0 /* DetailCryptoCoinHeaderView.swift */; };
 		CC3900C72BFC475C00E5CDC0 /* DetailCryptoCoinCalculateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3900C62BFC475C00E5CDC0 /* DetailCryptoCoinCalculateView.swift */; };
 		CC3900CA2BFDEF7E00E5CDC0 /* DetailCryptoCoinHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3900C92BFDEF7E00E5CDC0 /* DetailCryptoCoinHostingController.swift */; };
 		CC3900D02BFEE84E00E5CDC0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3900CF2BFEE84E00E5CDC0 /* DataManager.swift */; };
 		CC3900D32BFEEBD400E5CDC0 /* CryptoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3900D22BFEEBD400E5CDC0 /* CryptoData.swift */; };
 		CC3900DC2BFEFA8800E5CDC0 /* HomeCryptoCoinData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC3900DA2BFEFA8800E5CDC0 /* HomeCryptoCoinData.xcdatamodeld */; };
+		CC3900E02BFF10D000E5CDC0 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CC3900DF2BFF10D000E5CDC0 /* Kingfisher */; };
+		CC3900E12BFF11F200E5CDC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC3900632BFBAC5A00E5CDC0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,7 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC3900C32BFC2B8D00E5CDC0 /* Kingfisher in Frameworks */,
+				CC3900E02BFF10D000E5CDC0 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +313,7 @@
 			);
 			name = CryptoApp;
 			packageProductDependencies = (
-				CC3900C22BFC2B8D00E5CDC0 /* Kingfisher */,
+				CC3900DF2BFF10D000E5CDC0 /* Kingfisher */,
 			);
 			productName = CryptoApp;
 			productReference = CC3900552BFBAC5900E5CDC0 /* CryptoApp.app */;
@@ -387,7 +388,7 @@
 			);
 			mainGroup = CC39004C2BFBAC5900E5CDC0;
 			packageReferences = (
-				CC3900C12BFC2B8D00E5CDC0 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				CC3900DE2BFF10D000E5CDC0 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = CC3900562BFBAC5900E5CDC0 /* Products */;
 			projectDirPath = "";
@@ -406,6 +407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC3900622BFBAC5A00E5CDC0 /* Assets.xcassets in Resources */,
+				CC3900E12BFF11F200E5CDC0 /* LaunchScreen.storyboard in Resources */,
 				CC3900C02BFC233E00E5CDC0 /* HomeCryptoCoinTableViewCell.xib in Resources */,
 				CC3900652BFBAC5A00E5CDC0 /* Base in Resources */,
 			);
@@ -638,6 +640,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CryptoApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -664,6 +667,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CryptoApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -797,7 +801,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CC3900C12BFC2B8D00E5CDC0 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		CC3900DE2BFF10D000E5CDC0 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
@@ -808,9 +812,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CC3900C22BFC2B8D00E5CDC0 /* Kingfisher */ = {
+		CC3900DF2BFF10D000E5CDC0 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CC3900C12BFC2B8D00E5CDC0 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			package = CC3900DE2BFF10D000E5CDC0 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */

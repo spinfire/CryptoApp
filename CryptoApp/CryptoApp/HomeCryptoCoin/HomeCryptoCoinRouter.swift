@@ -27,7 +27,7 @@ class HomeCryptoCoinRouter: HomeCryptoCoinRouting{
         let presenter = HomeCryptoCoinPresenter(homeCryptoCoinInteractor: interactor, router: self)
         homeCryptoCoinView = HomeCryptoCoinView(presenter: presenter)
         presenter.ui = homeCryptoCoinView
-        window?.rootViewController = UINavigationController(rootViewController: homeCryptoCoinView!)
+        window?.rootViewController = UINavigationController(rootViewController: homeCryptoCoinView ?? UIViewController())
         window?.makeKeyAndVisible()
     }
     
