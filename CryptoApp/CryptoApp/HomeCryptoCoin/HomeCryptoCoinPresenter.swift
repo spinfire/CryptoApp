@@ -12,6 +12,7 @@ protocol HomeCryptoCoinPresentable: AnyObject {
     
     func onViewAppear()
     func onTapCell(atIndex: Int)
+    func onViewScroll() 
 }
 
 protocol HomeCryptoCoinListUI: AnyObject {
@@ -21,6 +22,7 @@ protocol HomeCryptoCoinListUI: AnyObject {
 class HomeCryptoCoinPresenter: HomeCryptoCoinPresentable {
     weak var ui: HomeCryptoCoinListUI?
     var viewModels: [HomeCryptoCoinViewModel] = []
+    private var page = 0
     private let homeCryptoCoinInteractor : HomeCryptoCoinInteractor
     private var models: [HomeCryptoCoinEntity] = []
     private let mapper: MapperHomeCryptoCoin
@@ -39,8 +41,19 @@ class HomeCryptoCoinPresenter: HomeCryptoCoinPresentable {
     
     func onViewAppear() {
         Task{
-            models = await homeCryptoCoinInteractor.getCryptoCoinList().data
+            models = await homeCryptoCoinInteractor.getCryptoCoinList(page: page).data
             viewModels = models.map(mapper.map(entity:))
+            ui?.update(cryptoCoins: models)
+        }
+    }
+    
+    func onViewScroll() {
+        Task{
+            self.page += 1
+            let models = await homeCryptoCoinInteractor.getCryptoCoinList(page: page).data
+            let viewModel = models.map(mapper.map(entity:))
+            self.models.append(contentsOf: models)
+            self.viewModels.append(contentsOf: viewModel)
             ui?.update(cryptoCoins: models)
         }
     }

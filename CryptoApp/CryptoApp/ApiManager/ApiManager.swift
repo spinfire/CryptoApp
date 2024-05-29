@@ -29,9 +29,17 @@ class ApiManager: ApiManagerProtocol {
                                 queryParameters: queryParameters,
                                 method: .get)
         
-        let url =  URL(string: "https://min-api.cryptocompare.com/data/top/totalvolfull?limit=20&page=0&tsym=EUR")!
+        let url =  url(endpoint: endpoint, baseUrl: ApiUtils.apiUrl)!
         let (data, _) = try! await URLSession.shared.data(from: url)
         return try! JSONDecoder().decode(HomeCryptoCoinResponseEntity.self, from: data)
         
+    }
+    
+    func url(endpoint: Endpoint, baseUrl: String) -> URL? {
+        var urlComponents = URLComponents(string: baseUrl + endpoint.path)
+        let urlQueryParametrs = endpoint.queryParameters.map { URLQueryItem(name: $0.key, value: "\($0.value)")}
+        urlComponents?.queryItems = urlQueryParametrs
+        
+        return urlComponents?.url
     }
 }

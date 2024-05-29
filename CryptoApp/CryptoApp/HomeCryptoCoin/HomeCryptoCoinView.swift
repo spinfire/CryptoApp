@@ -49,6 +49,7 @@ class HomeCryptoCoinView: UIViewController{
         
         HomeCryptoCoinTableView.dataSource = self
         HomeCryptoCoinTableView.delegate = self
+        HomeCryptoCoinTableView.prefetchDataSource = self
     }
 }
 
@@ -72,6 +73,14 @@ extension HomeCryptoCoinView: UITableViewDelegate{
     }
 }
 
+extension HomeCryptoCoinView: UITableViewDataSourcePrefetching{
+    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
+        let filtered = indexPaths.filter({$0.row >= presenter.viewModels.count - 1})
+        if filtered.count > 0{
+            presenter.onViewScroll()
+        }
+    }
+}
 extension HomeCryptoCoinView: HomeCryptoCoinListUI{
     func update(cryptoCoins: [HomeCryptoCoinEntity]) {
         DispatchQueue.main.async {

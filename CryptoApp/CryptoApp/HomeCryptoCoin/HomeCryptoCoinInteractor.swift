@@ -7,25 +7,25 @@
 
 import Foundation
 protocol HomeCryptoCoinInteractable {
-    func getCryptoCoinList() async -> HomeCryptoCoinResponseEntity
+    func getCryptoCoinList(page: Int) async -> HomeCryptoCoinResponseEntity
 }
 class HomeCryptoCoinInteractor: HomeCryptoCoinInteractable{
     private let apiManager: ApiManagerProtocol
     init(apiManager: ApiManagerProtocol) {
         self.apiManager = apiManager
     }
-    func getCryptoCoinList() async -> HomeCryptoCoinResponseEntity{
-        return await apiManager.getCryptoCoinList(page: 1)
+    func getCryptoCoinList(page: Int) async -> HomeCryptoCoinResponseEntity{
+        return await apiManager.getCryptoCoinList(page: page)
     }
 }
 
 class HomeCryptoCoinInteractorMock: HomeCryptoCoinInteractable{
-    func getCryptoCoinList() async -> HomeCryptoCoinResponseEntity{
+    func getCryptoCoinList(page: Int) async -> HomeCryptoCoinResponseEntity{
         return HomeCryptoCoinResponseEntity(data: [
             .init(coinInfo: 
                     .init(id: "", name: "", fullName: "", imageUrl: ""), display: .init(eur: .init(price: "", volume24Hour: ""))
             )
-        ], metadata: .init(count: 0))
+        ], metadata: .init(count: page))
     }
 
 }

@@ -32,7 +32,6 @@
 		CC3900B42BFBDD0000E5CDC0 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3900B32BFBDD0000E5CDC0 /* ApiManager.swift */; };
 		CC3900B62BFBDDA300E5CDC0 /* CryptoCoinPageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3900B52BFBDDA300E5CDC0 /* CryptoCoinPageInfo.swift */; };
 		CC3900B82BFBDE3D00E5CDC0 /* HTTPClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3900B72BFBDE3D00E5CDC0 /* HTTPClientError.swift */; };
-		CC3900BA2BFBF88E00E5CDC0 /* AFWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3900B92BFBF88E00E5CDC0 /* AFWrapper.swift */; };
 		CC3900BC2BFBFE1600E5CDC0 /* HomeCryptoCoinResponseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3900BB2BFBFE1600E5CDC0 /* HomeCryptoCoinResponseEntity.swift */; };
 		CC3900BF2BFC233E00E5CDC0 /* HomeCryptoCoinTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3900BD2BFC233E00E5CDC0 /* HomeCryptoCoinTableViewCell.swift */; };
 		CC3900C02BFC233E00E5CDC0 /* HomeCryptoCoinTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC3900BE2BFC233E00E5CDC0 /* HomeCryptoCoinTableViewCell.xib */; };
@@ -93,7 +92,6 @@
 		CC3900B32BFBDD0000E5CDC0 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		CC3900B52BFBDDA300E5CDC0 /* CryptoCoinPageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCoinPageInfo.swift; sourceTree = "<group>"; };
 		CC3900B72BFBDE3D00E5CDC0 /* HTTPClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientError.swift; sourceTree = "<group>"; };
-		CC3900B92BFBF88E00E5CDC0 /* AFWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFWrapper.swift; sourceTree = "<group>"; };
 		CC3900BB2BFBFE1600E5CDC0 /* HomeCryptoCoinResponseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCryptoCoinResponseEntity.swift; sourceTree = "<group>"; };
 		CC3900BD2BFC233E00E5CDC0 /* HomeCryptoCoinTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCryptoCoinTableViewCell.swift; sourceTree = "<group>"; };
 		CC3900BE2BFC233E00E5CDC0 /* HomeCryptoCoinTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCryptoCoinTableViewCell.xib; sourceTree = "<group>"; };
@@ -263,7 +261,6 @@
 				CC3900B12BFBDB8500E5CDC0 /* ApiUtils.swift */,
 				CC3900B32BFBDD0000E5CDC0 /* ApiManager.swift */,
 				CC3900B72BFBDE3D00E5CDC0 /* HTTPClientError.swift */,
-				CC3900B92BFBF88E00E5CDC0 /* AFWrapper.swift */,
 			);
 			path = ApiManager;
 			sourceTree = "<group>";
@@ -454,7 +451,6 @@
 				CC3900942BFBC44B00E5CDC0 /* DetailCryptoCoinInteractor.swift in Sources */,
 				CC3900D02BFEE84E00E5CDC0 /* DataManager.swift in Sources */,
 				CC3900B42BFBDD0000E5CDC0 /* ApiManager.swift in Sources */,
-				CC3900BA2BFBF88E00E5CDC0 /* AFWrapper.swift in Sources */,
 				CC3900A02BFBC57B00E5CDC0 /* HomeCryptoCoinRouter.swift in Sources */,
 				CC3900A22BFBC58300E5CDC0 /* HomeCryptoCoinPresenter.swift in Sources */,
 				CC3900A42BFBC58E00E5CDC0 /* HomeCryptoCoinInteractor.swift in Sources */,
