@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class HomeCryptoCoinView: UIViewController{
+final class HomeCryptoCoinView: UIViewController{
     
     private var HomeCryptoCoinTableView: UITableView = {
         let tableView = UITableView()

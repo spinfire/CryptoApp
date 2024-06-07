@@ -16,7 +16,6 @@ protocol HomeCryptoCoinRouting: AnyObject {
     func showDetailCryptoCoin(withEntity entity: HomeCryptoCoinEntity)
 }
 
-
 class HomeCryptoCoinRouter: HomeCryptoCoinRouting{
     var homeCryptoCoinView: HomeCryptoCoinView?
     var detailCryptoCoinRouter: DetailCryptoCoinRouting?

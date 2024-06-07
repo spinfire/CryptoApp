@@ -8,7 +8,7 @@
 import UIKit
 import Kingfisher
 
-class HomeCryptoCoinTableViewCell: UITableViewCell {
+final class HomeCryptoCoinTableViewCell: UITableViewCell {
 
     @IBOutlet weak var coinImageView: UIImageView!
     
